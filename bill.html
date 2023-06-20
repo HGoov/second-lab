@@ -1,0 +1,204 @@
+<html>
+<head>
+<style>
+@page {
+    @top-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: sans-serif;
+        padding-right: 15px;
+    }
+}
+@font-face {
+  font-family: SF UI Display;
+  src: url(/FontsFree-Net-SF-UI-Display-Regular-1.ttf);
+}
+body {
+  font-family: 'SF UI Display', sans-serif;
+  width: 390px;
+  height: 1724px;
+}
+header {
+  background: #F3F3F6;
+  height: 32px;
+  text-align: center;
+  padding: 24px 0;
+}
+main {
+  padding: 24px;
+}
+.block {
+  margin-bottom: 12px;
+}
+.label {
+  font-size: 14px;
+  line-height: 17px;
+  color: #5A5B73;
+}
+.data {
+  font-size: 16px;
+  line-height: 22px;
+}
+.code {
+  text-align: center;
+}
+footer {
+  color: #5A5B73;
+  background: #F3F3F6;
+  height: 110px;
+  padding: 24px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.yellow-line {
+  height: 4px;
+  background: #FAFF00;
+  margin: 24px 0 20px 0;
+}
+.line{
+  width: 342px;
+  height: 1px;
+  background: #DDDEE9;
+  margin: 12px 0;
+}
+.info, .sum {
+  float: right;
+  text-align: right;
+}
+.sum-block {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+}
+a {
+  color: #6C34A3;
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body dir="auto">
+  <header>
+      <img src="logo.png" alt="logo"></img>
+  </header>
+  <main>
+
+    <div class="sum-block">
+      <span>Итого</span>
+      <div class="sum">FullSourceSum</div>
+    </div>
+    
+    <div class="yellow-line"></div>
+
+    <div class="block">
+      <div class="label">Сумма</div>
+      <div class="data">BeneficiarSum</div>
+    </div>
+    <div class="block">
+      <div class="label">Комиссия банка с учетом НДС</div>
+      <div class="data">IncSourceOrchstratorFee</div>
+    </div>
+    <div class="block">
+      <div class="label">Дата и время</div>
+      <div class="data">AuthDateTime</div>
+    </div>
+    <div class="block">
+      <div class="label">ID транзакции</div>
+      <div class="data">ID</div>
+    </div>
+    <div class="block">
+      <div class="label">Статус</div>
+      <div class="data">Status</div>
+    </div>
+
+    <div class="line"></div>
+    
+    <div class="block">
+      <div class="label">Карта списания</div>
+      <div class="data">SourceMaskedPAN</div>
+    </div>
+    <div class="block">
+      <div class="label">Карта зачисления</div>
+      <div class="data">ReceiverMaskedPAN</div>
+    </div>
+    <div class="block">
+      <div class="label">Телефон получателя</div>
+      <div class="data">AddID_TelNo</div>
+    </div>
+    <div class="block">
+      <div class="label">Имя отправителя</div>
+      <div class="data">SourceCardholderName</div>
+    </div>
+    <div class="block">
+      <div class="label">Имя получателя</div>
+      <div class="data">ReceiverCardholderName</div>
+    </div>
+    <div class="block">
+      <div class="label">Название сервиса</div>
+      <div class="data">MerchantName</div>
+    </div>
+    <div class="block">
+      <div class="label">Услуга/Категория</div>
+      <div class="data">ClassifierMerchantCategory</div>
+    </div>
+
+    <div class="line"></div>
+    
+    <div class="block">
+      <div class="label">Номер чека</div>
+      <div class="data">ofd_cheque_id</div>
+    </div>
+
+    <div class="code">
+      <img src="qr-code.png" alt="qr-code"></img>
+    </div>
+
+    <div class="line"></div>
+    
+    <div class="block">
+      <div class="label">PaynetField</div>
+      <div class="data">PaynetField</div>
+    </div>
+    <div class="block">
+      <div class="label">PaynetField</div>
+      <div class="data">PaynetField</div>
+    </div>
+    <div class="block">
+      <div class="label">PaynetField</div>
+      <div class="data">PaynetField</div>
+    </div>
+    <div class="block">
+      <div class="label">PaynetField</div>
+      <div class="data">PaynetField</div>
+    </div>
+    <div class="block">
+      <div class="label">PaynetField</div>
+      <div class="data">PaynetField</div>
+    </div>
+    <div class="block">
+      <div class="label">PaynetField</div>
+      <div class="data">PaynetField</div>
+    </div>
+    <div class="block">
+      <div class="label">PaynetField</div>
+      <div class="data">PaynetField</div>
+    </div>
+    <div class="block">
+      <div class="label">PaynetField</div>
+      <div class="data">PaynetField</div>
+    </div>
+  </main>
+  <footer>
+    <span>Денежные средства списываются после получения банком подтверждения о проведении финансовой операции</span>
+    <div class="line"></div>
+    <div>
+      <span>Служба поддержки</span>
+      <div class="info">
+        <div>+998 78 888-78-87</div>
+        <div class="email"><a href="mailto:info@avotech.com">info@avotech.com</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
